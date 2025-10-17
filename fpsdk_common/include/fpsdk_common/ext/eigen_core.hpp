@@ -8,7 +8,7 @@
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 #pragma GCC diagnostic ignored "-Wshadow"
 
-#if not defined(__clang__)
+#if !defined(__clang__)
 #pragma GCC diagnostic ignored "-Wmaybe-uninitialized"  // NOLINT
 #if defined(__GNUC__) && (__GNUC__ >= 9)
 #  pragma GCC diagnostic ignored "-Wdeprecated-copy"
