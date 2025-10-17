@@ -1,6 +1,6 @@
 // Wrapper to suppress warning from Eigen headers
-#ifndef __FPSDK_COMMON_EXT_EIGEN_GEOMETRY_HPP__
-#define __FPSDK_COMMON_EXT_EIGEN_GEOMETRY_HPP__
+#ifndef __FPSDK_COMMON_EXT_EIGEN_CORE_HPP__
+#define __FPSDK_COMMON_EXT_EIGEN_CORE_HPP__
 
 // Make __has_warning available which clang provides; define a safe fallback for other compilers
 #ifndef __has_warning
@@ -29,7 +29,7 @@
 #pragma clang diagnostic ignored "-Wdeprecated-copy"
 #endif
 
-#include <Eigen/Geometry>
+#include <Eigen/Core>
 #pragma clang diagnostic pop
 
 #elif defined(__GNUC__) || defined(__GNUG__)
@@ -48,12 +48,12 @@
 #pragma GCC diagnostic ignored "-Wdeprecated-copy"
 #endif
 
-#include <Eigen/Geometry>
+#include <Eigen/Core>
 #pragma GCC diagnostic pop
 #else
 
 // Fallback
-#include <Eigen/Geometry>
+#include <Eigen/Core>
 
 #endif
 
@@ -77,4 +77,4 @@
 
 #endif  // !EIGEN_VERSION_AT_LEAST(3, 4, 0)
 
-#endif  // __FPSDK_COMMON_EXT_EIGEN_GEOMETRY_HPP__
+#endif  // __FPSDK_COMMON_EXT_EIGEN_CORE_HPP__
