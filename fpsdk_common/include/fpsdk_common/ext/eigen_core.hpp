@@ -14,7 +14,7 @@
 #  pragma GCC diagnostic ignored "-Wdeprecated-copy"
 #endif
 #pragma GCC diagnostic ignored "-Wclass-memaccess"  // NOLINT
-#  endif
+#endif
 
 #include <Eigen/Core>
 #pragma GCC diagnostic pop

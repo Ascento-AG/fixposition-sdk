@@ -14,7 +14,7 @@
 #  pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
 #  pragma GCC diagnostic ignored "-Wdeprecated-copy"
 #endif
-#  endif
+#endif
 
 #include <Eigen/Geometry>
 #pragma GCC diagnostic pop
