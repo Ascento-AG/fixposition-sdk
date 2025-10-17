@@ -60,9 +60,9 @@
 // -------------------------
 // Post-include special case
 // -------------------------
-// See explanation in eigen_core.hpp
-// For Eigen < 3.4, the library can still trigger -Wdeprecated-copy in user code.
-// Keep the original behavior: suppress it outside the push/pop when necessary.
+// For older Eigen (e.g. 3.3.7, which we have in fusion-dev-env and on the sensor), we unfortunately have to disable
+// this warning globally (templates instantiation can be anywhere...). :-/ GCC 9 (in Yocto) doesn't like this.
+// See https://gitlab.com/libeigen/eigen/-/issues/1788, https://gitlab.com/libeigen/eigen/-/merge_requests/29
 #if !EIGEN_VERSION_AT_LEAST(3, 4, 0)
 
 #if defined(__clang__)
